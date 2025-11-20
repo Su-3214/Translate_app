@@ -17,7 +17,7 @@ submit_button = st.button("Let's Translate!") # ボタン
 # --- ボタンが押された後の処理 ---
 if submit_button and source_text:
     # Geminiへの命令文を作成
-    pronpt = f"(target.lang)に接続し、翻訳して。:\n(source.text)"
+    pronpt = f"{target.lang}に接続し、翻訳して。:\n{source.text}"
     # APIを呼び出し
     response = model.generate_content(pronpt)
     # 結果を表示
