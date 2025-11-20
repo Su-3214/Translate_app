@@ -11,7 +11,7 @@ model = genai.GenerativeModel("gemini-flash-latest")
 st.title("みんなでつくるAI翻訳アプリ") # タイトル
 
 source_text = st.text_area("↓ TransLate ↓") # テキスト入力欄
-target_lang = st.selectbox("台湾語", [台湾語],[中国語]) # セレクトボックス
+target_lang = st.selectbox("翻訳先の言語を選択", ["台湾語", "中国語"])
 submit_button = st.button("Let's Translate!") # ボタン
 
 # --- ボタンが押された後の処理 ---
